@@ -71,7 +71,6 @@ function filterAndTransformTracks(tracks, criteria) {
         output = result;
     }
 
-    console.log(output);
     return output;
 }
 
@@ -81,11 +80,3 @@ module.exports = {
     filterAndTransformTracks
 };
 
-const tracks = [
-{ title: 'Blinding Lights', artist: 'The Weeknd', year: 2020 },
-{ title: 'Starboy', artist: 'The Weeknd', year: 2016 },
-{ title: 'Levitating', artist: 'Dua Lipa', year: 2021 },
-{ title: 'Thriller', artist: 'Michael Jackson', year: 1982 },
-];
-
-filterAndTransformTracks(tracks, {minYear: 2015, maxYear: 2020});
